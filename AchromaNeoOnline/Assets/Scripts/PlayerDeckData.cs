@@ -12,6 +12,8 @@ public class PlayerDeckData
     public int matches;
 
     public string[] deckCards;
+    public string[] ownedActions;
+    public string[] ownedCharacters;
 
     public PlayerDeckData(PlayerInfo playerInfo)
     {
@@ -49,6 +51,18 @@ public class PlayerDeckData
                 deckCards[counter] = deck.actionCards[cardname].ToString();
                 counter++;
             }
+        }
+
+        ownedActions = new string[playerInfo.collection.ownedActions.Count];
+        for (int i = 0; i < ownedActions.Length; i++)
+        {
+            ownedActions[i] = playerInfo.collection.ownedActions[i];
+        }
+
+        ownedCharacters = new string[playerInfo.collection.ownedCharacters.Count];
+        for (int i = 0; i < ownedCharacters.Length; i++)
+        {
+            ownedCharacters[i] = playerInfo.collection.ownedCharacters[i];
         }
     }
 }
