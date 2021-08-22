@@ -14,4 +14,6 @@ public class Constants
     public static int TRIGGER_AMT = 25;
 
     public static int LIFE_LIMIT = 7;
+
+    public static int POINTS_LIMIT = 10;
 }

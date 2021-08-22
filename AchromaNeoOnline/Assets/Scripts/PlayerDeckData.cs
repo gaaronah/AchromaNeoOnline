@@ -11,6 +11,9 @@ public class PlayerDeckData
     public int wins;
     public int matches;
 
+    public int gold;
+    public int essence;
+
     public string[] deckCards;
     public string[] ownedActions;
     public string[] ownedCharacters;
@@ -22,6 +25,8 @@ public class PlayerDeckData
         points = playerInfo.points;
         wins = playerInfo.wins;
         matches = playerInfo.matches;
+        gold = playerInfo.gold;
+        essence = playerInfo.essence;
 
         List<DeckInfo> deckInfo = playerInfo.decks;
         int totalSize = 0;
