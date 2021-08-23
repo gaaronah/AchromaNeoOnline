@@ -6,6 +6,7 @@ public class SaveSystem
 {
     public static void SavePlayerDeckInfo(PlayerInfo playerInfo)
     {
+        Debug.Log("Saving player data");
         BinaryFormatter formatter = new BinaryFormatter();
 
         string path = Application.persistentDataPath + "/player.neo";
@@ -22,6 +23,8 @@ public class SaveSystem
         string path = Application.persistentDataPath + "/player.neo";
         if (File.Exists(path))
         {
+            Debug.Log("File found! Loading player data...");
+
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
 

@@ -58,8 +58,8 @@ public class PlayerInfo : MonoBehaviour
                 {
                     decks.Add(new DeckInfo());
                     deckCount++;
-                    decks[deckCount - 1].deckName = data.deckCards[0];
-                    decks[deckCount - 1].character = data.deckCards[1];
+                    decks[deckCount - 1].deckName = data.deckCards[i];
+                    decks[deckCount - 1].character = data.deckCards[i + 1];
                     i += 2;
                 }
                 decks[deckCount - 1].AddCard(data.deckCards[i], int.Parse(data.deckCards[i + 1]));
@@ -87,12 +87,7 @@ public class PlayerInfo : MonoBehaviour
             ResetData();
         }
 
-
-        Debug.Log("List Decks:");
-        foreach (DeckInfo deck in decks)
-        {
-            Debug.Log(deck.deckName);
-        }
+        ListDecks();
     }
 
     public void SaveInfo()
@@ -259,5 +254,18 @@ public class PlayerInfo : MonoBehaviour
         collection.ownedActions.Add("Craft Attack");
         collection.ownedActions.Add("Craft");
         collection.ownedActions.Add("Agility");
+
+        SaveSystem.SavePlayerDeckInfo(this);
+
+        ListDecks();
+    }
+
+    public void ListDecks()
+    {
+        Debug.Log("List Decks:");
+        foreach (DeckInfo deck in decks)
+        {
+            Debug.Log(deck.deckName);
+        }
     }
 }

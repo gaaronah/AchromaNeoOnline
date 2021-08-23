@@ -13,11 +13,8 @@ public class ActionCard : MonoBehaviour
     public int color;
     public int currentGrade;
     
-
     public void PlayAction()
     {
         
     }
-
-
 }

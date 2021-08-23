@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class Constants
 {
@@ -16,4 +13,7 @@ public class Constants
     public static int LIFE_LIMIT = 7;
 
     public static int POINTS_LIMIT = 10;
+
+    public static int TOTAL_CHARACTERS = 10;
+    public static int TOTAL_ACTIONS = 40;
 }
