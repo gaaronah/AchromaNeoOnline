@@ -16,8 +16,8 @@ Demeter:
 
 Dionysus:
 1: [CHROMA] Look at all of your life cards. Give one of your life cards a random trigger.
-2: [CHROMA] Look at all of your life cards. Give up to 2 of your life cards a random trigger.
-3: [CHROMA] Gain 1 extra life. Look at all of your life cards. Give up to 2 of your life cards a random trigger.
+2: [CHROMA] Gain 1 extra life. Look at all of your life cards. Give up to 1 of your life cards a random trigger.
+3: [CHROMA] Gain 1 extra life. Look at all of your life cards. Give up to 1 of your life cards a random trigger.
 
 Athena:
 1: [CHROMA] Reduce the cost of all your action cards on the field by 1.

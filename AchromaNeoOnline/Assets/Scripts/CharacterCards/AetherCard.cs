@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class AetherCard : CharacterCard
 {
-    override public void LevelUp()
+    public override void LevelUp()
     {
         if (color != 'C')
         {
             color = 'C';
         }
-        if (level < 3)
-        {
-            level++;
-            LoadCard();
-        }
+        base.LevelUp();
+    }
+
+    public override void ActivateSkill()
+    {
+        base.ActivateSkill();
     }
 }

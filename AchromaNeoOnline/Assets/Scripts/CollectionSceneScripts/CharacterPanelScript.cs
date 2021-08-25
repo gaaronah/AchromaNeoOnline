@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class CharacterPanelScript : MonoBehaviour
 {
-    public CharacterCard[] characterSprites1 = new CharacterCard[Constants.TOTAL_CHARACTERS];
+    public CharacterCard[] characterCards = new CharacterCard[Constants.TOTAL_CHARACTERS];
 
     public Image[] placeholders = new Image[5];
+    public Image[] shades = new Image[5];
     public Text[] characterNames = new Text[5];
 
     public GameObject infoPanel;

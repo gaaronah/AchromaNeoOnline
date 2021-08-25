@@ -22,7 +22,7 @@ public class CharacterCard : MonoBehaviour
         LoadCard();
     }
 
-    virtual public void LevelUp()
+    public virtual void LevelUp()
     {
         if (level < 3)
         {
@@ -31,7 +31,7 @@ public class CharacterCard : MonoBehaviour
         }
     }
 
-    virtual public void ExpUp(int i)
+    public virtual void ExpUp(int i)
     {
         if (level < 3)
         {
@@ -54,10 +54,18 @@ public class CharacterCard : MonoBehaviour
         }
     }
 
-    virtual public void LoadCard()
+    public virtual void LoadCard()
     {
-        characterImage.sprite = sprites[level - 1];
-        characterGrade.text = level.ToString();
+        if (characterImage != null && characterGrade != null)
+        {
+            characterImage.sprite = sprites[level - 1];
+            characterGrade.text = level.ToString();
+        }
         currentSkill = characterSkill[level - 1];
+    }
+
+    public virtual void ActivateSkill()
+    {
+
     }
 }
