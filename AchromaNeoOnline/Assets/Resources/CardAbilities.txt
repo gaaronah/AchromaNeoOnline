@@ -1,0 +1,25 @@
+// Characters
+Aether:
+1: 
+2: [CHROMA] Deal 1 damage to your opponent.
+3: [CHROMA] Deal 1 damage to your opponent. Draw 1 card. Gain 1 extra life, and give it a random trigger.
+
+Ares:
+1: [CHROMA] Deal 1 damage to your opponent.
+2: [CHROMA] Deal 1 damage to your opponent.
+3: [CHROMA] Deal 2 damage to your opponent.
+
+Demeter:
+1: [CHROMA] Gain 1 exp.
+2: [CHROMA] Gain 1 exp. Draw 1 card.
+3: [CHROMA] Gain 1 extra life. Draw 1 card.
+
+Dionysus:
+1: [CHROMA] Look at all of your life cards. Give one of your life cards a random trigger.
+2: [CHROMA] Look at all of your life cards. Give up to 2 of your life cards a random trigger.
+3: [CHROMA] Gain 1 extra life. Look at all of your life cards. Give up to 2 of your life cards a random trigger.
+
+Athena:
+1: [CHROMA] Reduce the cost of all your action cards on the field by 1.
+2: [CHROMA] Reduce the cost of all your action cards on the field by 1. Draw 1 card.
+3: [CHROMA] Reduce the cost of all your action cards on the field by 1. Draw 2 cards.

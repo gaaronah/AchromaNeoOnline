@@ -10,7 +10,7 @@ public class ActionCard : MonoBehaviour
     public int owner;
     public int location;
 
-    public int color;
+    public char color; // W, R, G, B, Y, C
     public int currentGrade;
     
     public void PlayAction()

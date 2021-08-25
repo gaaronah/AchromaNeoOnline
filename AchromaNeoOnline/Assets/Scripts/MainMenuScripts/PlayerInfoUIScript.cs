@@ -54,9 +54,9 @@ public class PlayerInfoUIScript : MonoBehaviour
     {
         string newName = playerPanelNameInput.text;
 
-        if (newName.Length > 12 || newName == null || newName == "")
+        if (newName.Length > Constants.NAME_MAX_LENGTH || newName == null || newName == "")
         {
-            Debug.LogError("Input name invalid! Input name cannot be empty & must be less than 12 characters.");
+            Debug.LogError("Input name invalid! Input name cannot be empty & must be less than " + Constants.NAME_MAX_LENGTH + " characters.");
             return;
         }
         PlayerInfo.playerInfo.UpdateName(newName);

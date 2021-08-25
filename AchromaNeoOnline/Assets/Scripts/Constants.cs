@@ -16,4 +16,9 @@ public class Constants
 
     public static int TOTAL_CHARACTERS = 10;
     public static int TOTAL_ACTIONS = 40;
+
+    public static int NAME_MAX_LENGTH = 15;
+
+    public static int CHAR_MAX_EXP_1 = 2;
+    public static int CHAR_MAX_EXP_2 = 4;
 }
