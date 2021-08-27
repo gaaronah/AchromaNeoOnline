@@ -1,25 +1,50 @@
 // Characters
-Aether:
+Aether: W -> C
 1: 
 2: [CHROMA] Deal 1 damage to your opponent.
 3: [CHROMA] Deal 1 damage to your opponent. Draw 1 card. Gain 1 extra life, and give it a random trigger.
 
-Ares:
+Ares: R
 1: [CHROMA] Deal 1 damage to your opponent.
 2: [CHROMA] Deal 1 damage to your opponent.
 3: [CHROMA] Deal 2 damage to your opponent.
 
-Demeter:
+Demeter: G
 1: [CHROMA] Gain 1 exp.
 2: [CHROMA] Gain 1 exp. Draw 1 card.
 3: [CHROMA] Gain 1 extra life. Draw 1 card.
 
-Dionysus:
-1: [CHROMA] Look at all of your life cards. Give one of your life cards a random trigger.
-2: [CHROMA] Gain 1 extra life. Look at all of your life cards. Give up to 1 of your life cards a random trigger.
-3: [CHROMA] Gain 1 extra life. Look at all of your life cards. Give up to 1 of your life cards a random trigger.
+Dionysus: B
+1: [CHROMA] Look at all of your life cards. Give 1 of your life cards a random trigger.
+2: [CHROMA] Gain 1 extra life. Look at all of your life cards. Give 1 of your life cards a random trigger.
+3: [CHROMA] Gain 1 extra life. Look at all of your life cards. Give 1 of your life cards a random trigger.
 
-Athena:
+Athena: Y
 1: [CHROMA] Reduce the cost of all your action cards on the field by 1.
-2: [CHROMA] Reduce the cost of all your action cards on the field by 1. Draw 1 card.
-3: [CHROMA] Reduce the cost of all your action cards on the field by 1. Draw 2 cards.
+2: [CHROMA] Reduce the cost of all your action cards on the field by 1.
+3: [CHROMA] Reduce the cost of all your action cards on the field by 1. Draw 1 card.
+
+Hades: R 
+1: [CHROMA] Your opponent discards 1 card.
+2: [CHROMA] Your opponent discards 2 cards.
+3: [CHROMA] Your opponent discards 2 cards. Destroy 1 of your opponent's life cards.
+
+Artemis: G
+1: [CHROMA] Summon a beast.
+2: [CHROMA] Summon a beast.
+3: [CHROMA] Summon 2 beasts.
+
+Poseidon: B
+1: [CHROMA] Look at all of your life cards. Take 1 damage. Gain 1 extra life.
+2: [CHROMA] Look at all of your life cards. Take 1 damage. Gain 1 extra life.
+3: [CHROMA] Look at all of your life cards. Take 1 damage. Gain 2 extra life.
+
+Zeus: Y
+1: [CHROMA] Destroy an action card on the field.
+2: [CHROMA] Destroy an action card on the field.
+3: [CHROMA] Destroy up to 2 action cards on the field.
+
+Thanatos: R/B
+1: [CHROMA] Discard the top card of your deck. Add 1 card from your drop zone to your hand.
+2: [CHROMA] Discard the top card of your deck. Add 1 card from your drop zone to your hand. Deal 1 damage to your opponent.
+3: [CHROMA] Discard the top card of your deck. Add 1 card from your drop zone to your hand. Destroy 1 of your opponent's life cards.

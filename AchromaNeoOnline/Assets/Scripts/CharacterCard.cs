@@ -13,6 +13,8 @@ public class CharacterCard : MonoBehaviour
     public string currentSkill;
     public string[] characterSkill = new string[3];
 
+    public ActionCard[] relatedActions;
+
     public Image characterImage;
     public Text characterGrade;
 
@@ -27,6 +29,15 @@ public class CharacterCard : MonoBehaviour
         if (level < 3)
         {
             level++;
+            LoadCard();
+        }
+    }
+
+    public virtual void LevelDown()
+    {
+        if (level > 1)
+        {
+            level--;
             LoadCard();
         }
     }
