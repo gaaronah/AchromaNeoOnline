@@ -255,7 +255,7 @@ public class PlayerInfo : MonoBehaviour
         collection.ownedActions.Add("Craft");
         collection.ownedActions.Add("Agility");
 
-        SaveSystem.SavePlayerDeckInfo(this);
+        SaveInfo();
 
         ListDecks();
     }
@@ -267,5 +267,26 @@ public class PlayerInfo : MonoBehaviour
         {
             Debug.Log(deck.deckName);
         }
+    }
+
+    public void AddCharacter(CharacterCard card)
+    {
+        collection.ownedCharacters.Add(card.characterName);
+        SaveInfo();
+    }
+
+    public void RemoveCharacter(CharacterCard card)
+    {
+        if (collection.ownedCharacters.Contains(card.characterName))
+        {
+            collection.ownedCharacters.Remove(card.characterName);
+            SaveInfo();
+        }
+    }
+
+    public void AddAction(ActionCard card)
+    {
+        collection.ownedCharacters.Add(card.cardName);
+        SaveInfo();
     }
 }

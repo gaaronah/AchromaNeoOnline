@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CharacterPanelScript : MonoBehaviour
 {
@@ -163,5 +164,27 @@ public class CharacterPanelScript : MonoBehaviour
     public void CloseCardInfoPanel()
     {
         cardInfoPanelScript.gameObject.SetActive(false);
+    }
+
+    public void AddAether()
+    {
+       if (!PlayerInfo.playerInfo.collection.ownedCharacters.Contains("Aether"))
+        {
+            PlayerInfo.playerInfo.AddCharacter(characterCards[0]);
+            //LoadOwnedCards();
+            //LoadPage();
+            SceneManager.LoadScene(2);
+        }
+    }
+
+    public void RemoveAether()
+    {
+        if (PlayerInfo.playerInfo.collection.ownedCharacters.Contains("Aether"))
+        {
+            PlayerInfo.playerInfo.RemoveCharacter(characterCards[0]);
+            //LoadOwnedCards();
+            //LoadPage();
+            SceneManager.LoadScene(2);
+        }
     }
 }

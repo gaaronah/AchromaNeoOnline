@@ -44,7 +44,7 @@ Zeus: Y
 2: [CHROMA] Destroy an action card on the field.
 3: [CHROMA] Destroy up to 2 action cards on the field.
 
-Thanatos: R/B
+Thanatos: R
 1: [CHROMA] Discard the top card of your deck. Add 1 card from your drop zone to your hand.
 2: [CHROMA] Discard the top card of your deck. Add 1 card from your drop zone to your hand. Deal 1 damage to your opponent.
 3: [CHROMA] Discard the top card of your deck. Add 1 card from your drop zone to your hand. Destroy 1 of your opponent's life cards.

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerInfoUIScript : MonoBehaviour
 {
@@ -60,7 +61,8 @@ public class PlayerInfoUIScript : MonoBehaviour
             return;
         }
         PlayerInfo.playerInfo.UpdateName(newName);
-        LoadDataToUI();
+        //LoadDataToUI();
+        SceneManager.LoadScene(1);
     }
 
     public void OpenPlayerPanel()
@@ -72,6 +74,7 @@ public class PlayerInfoUIScript : MonoBehaviour
     {
         PlayerInfo.playerInfo.ResetData();
         Debug.Log("reset data");
-        LoadDataToUI();
+        //LoadDataToUI();
+        SceneManager.LoadScene(1);
     }
 }
