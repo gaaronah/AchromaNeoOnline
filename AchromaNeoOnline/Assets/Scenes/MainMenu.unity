@@ -1315,7 +1315,7 @@ MonoBehaviour:
   playerPanelMatchText: {fileID: 1122765628}
   playerPanelCharacterCollectionText: {fileID: 1492973076}
   playerPanelActionCollectionText: {fileID: 883876030}
-  timeToLoad: 0.5
+  timeToLoad: 0.3
 --- !u!1 &953446854
 GameObject:
   m_ObjectHideFlags: 0
