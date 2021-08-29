@@ -24,21 +24,21 @@ public class CollectionSceneManager : MonoBehaviour
         loadPanel.SetActive(false);
     }
 
-    private void OpenCharacterPanel()
+    public void OpenCharacterPanel()
     {
         actionPanel.SetActive(false);
         deckPanel.SetActive(false);
         characterPanel.SetActive(true);
     }
 
-    private void OpenActionPanel()
+    public void OpenActionPanel()
     {
         deckPanel.SetActive(false);
         characterPanel.SetActive(false);
         actionPanel.SetActive(true);
     }
 
-    private void OpenDeckPanel()
+    public void OpenDeckPanel()
     {
         actionPanel.SetActive(false);
         characterPanel.SetActive(false);

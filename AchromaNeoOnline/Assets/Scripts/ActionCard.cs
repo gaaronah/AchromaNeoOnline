@@ -17,7 +17,7 @@ public class ActionCard : MonoBehaviour
 
     public ActionCard[] relatedActions;
 
-    public void PlayAction()
+    public virtual void PlayAction()
     {
         
     }
