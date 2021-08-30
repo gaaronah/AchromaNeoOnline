@@ -1,50 +1,217 @@
-// Characters
-Aether: W -> C
+// Base Set Characters
+BC00 Aether: W -> R/G/B/Y -> C
 1: 
 2: [CHROMA] Deal 1 damage to your opponent.
 3: [CHROMA] Deal 1 damage to your opponent. Draw 1 card. Gain 1 extra life, and give it a random trigger.
 
-Ares: R
+BC01 Ares: R
 1: [CHROMA] Deal 1 damage to your opponent.
 2: [CHROMA] Deal 1 damage to your opponent.
 3: [CHROMA] Deal 2 damage to your opponent.
 
-Demeter: G
+BC02 Demeter: G
 1: [CHROMA] Gain 1 exp.
 2: [CHROMA] Gain 1 exp. Draw 1 card.
 3: [CHROMA] Gain 1 extra life. Draw 1 card.
 
-Dionysus: B
-1: [CHROMA] Look at all of your life cards. Give 1 of your life cards a random trigger.
-2: [CHROMA] Gain 1 extra life. Look at all of your life cards. Give 1 of your life cards a random trigger.
-3: [CHROMA] Gain 1 extra life. Look at all of your life cards. Give 1 of your life cards a random trigger.
+BC03 Dionysus: B
+1: [CHROMA] Look at all of your life cards. Give 1 of your closed life cards a random trigger.
+2: [CHROMA] Gain 1 extra life. Look at all of your life cards. Give 1 of your closed life cards a random trigger.
+3: [CHROMA] Gain 1 extra life. Look at all of your life cards. Give 1 of your closed life cards a random trigger.
 
-Athena: Y
+BC04 Athena: Y
 1: [CHROMA] Reduce the cost of all your action cards on the field by 1.
 2: [CHROMA] Reduce the cost of all your action cards on the field by 1.
 3: [CHROMA] Reduce the cost of all your action cards on the field by 1. Draw 1 card.
 
-Hades: R 
+// Base Set Actions
+BA01 Attack:
+Cost 1: Deal 1 damage to your opponent.
+
+BA02 Chroma Attack:
+Cost 1: Deal 1 damage to your opponent. This card is of all colors.
+
+BA03 Extra Life:
+Cost 1: Gain 1 extra-life.
+
+BA04 Smite:
+Cost 1: Destroy an action card on the field.
+
+BA05 Ramp: 
+Cost 1: Gain 1 exp.
+
+BA06 Peek:
+Cost 1: Look at 1 of your closed life cards, look at 1 of your opponent's closed life cards, you may trade them.
+
+BA07 Bless:
+Cost 1: Look at all of your life cards, give one of your closed life cards a random trigger.
+
+BA08 Quick Draw:
+Cost 1: Draw 2 cards.
+
+BA09 Critical Attack:
+Cost 2: Deal 2 damage to your opponent.
+
+BA10 Shield Attack: 
+Cost 2: Deal 1 damage to your opponent. If you are to take damage, destroy this card instead.
+
+BA11 Smite Attack:
+Cost 2: Destroy an action card on the field. Deal 1 damage to your opponent.
+
+BA12 Quick Attack:
+Cost 2: Deal 1 damage to your opponent. Draw 2 cards.
+
+BA13 Beast:
+Continuous
+Cost 2: At the start of your turn, deal 1 damage, and this card's cost becomes 0. Your opponent may attack this card to destroy it.
+
+BA14 Steal Attack:
+Cost 2: Look at 1 of your closed life cards, look at 1 of your opponent's closed life cards, you may trade them. Deal 1 damage to your opponent.
+
+BA15 Craft Attack: 
+Cost 2: Deal 1 damage to your opponent. Reduce the cost of all of your action cards on the field by 1.
+
+BA16 Battlecry:
+Cost 4: This card's cost becomes 0. Draw 2 cards. When you are about to deal damage to your opponent, destroy 1 of your opponent's life card instead.
+
+BA17 Great Beast:
+Continuous
+Cost 4: This card's cost becomes 0. At the start of your turn, deal 1 damage to your opponent and gain an extra life. Your opponent may attack this card to destroy it.
+
+BA18 Harvest:
+Cost 4: Gain 2 extra life. If you are to take damage, destroy this card instead.
+
+BA19 Insanity:
+Cost 4: Remove all of your opponent's life card's triggers. Give all of your life cards random triggers.
+
+BA20 Agility:
+Cost 4: This card's cost becomes 0. After you play an action, draw 1 card.
+
+// Booster Set 1 Characters
+1C01 Hades: R 
 1: [CHROMA] Your opponent discards 1 card.
 2: [CHROMA] Your opponent discards 2 cards.
 3: [CHROMA] Your opponent discards 2 cards. Destroy 1 of your opponent's life cards.
 
-Artemis: G
-1: [CHROMA] Summon a beast.
-2: [CHROMA] Summon a beast.
-3: [CHROMA] Summon 2 beasts.
+1C02 Artemis: G
+1: [CHROMA] Summon a beast. Turn its cost to 0.
+2: [CHROMA] Summon a beast. Turn its cost to 0.
+3: [CHROMA] Summon 2 beasts. Turn their cost to 0.
 
-Poseidon: B
+1C03 Poseidon: B
 1: [CHROMA] Look at all of your life cards. Take 1 damage. Gain 1 extra life.
 2: [CHROMA] Look at all of your life cards. Take 1 damage. Gain 1 extra life.
 3: [CHROMA] Look at all of your life cards. Take 1 damage. Gain 2 extra life.
 
-Zeus: Y
+1C04 Zeus: Y
 1: [CHROMA] Destroy an action card on the field.
 2: [CHROMA] Destroy an action card on the field.
 3: [CHROMA] Destroy up to 2 action cards on the field.
 
-Thanatos: R
+// Booster Set 1 Actions
+1A01 Drag Down: 
+C
+Cost 1: Your opponent discards 1 card.
+
+1A02 Attack Order:
+C
+Cost 1: Deal 1 damage for every "Beast" you control.
+
+1A03 Storm:
+C
+Cost 1: Take 1 damage. Gain 1 extra life.
+
+1A04 Trading Smite:
+C
+Cost 1: Destroy 1 of your action cards on the field. Draw 1 card.
+
+1A05 Trade Attack:
+C
+Cost 2: Deal 1 damage to your opponent. Discard 1 card. Draw 1 card.
+
+1A06 Preparation:
+R
+Cost 1: Choose 1 color. All of the cards in your hand becomes that color.
+
+1A07 Greater Extra Life:
+R
+Cost 2: Gain 1 extra life. Give it a random trigger.
+
+1A08 Destroy:
+R
+Cost 2: Destroy 1 of your opponent's life cards.
+
+1A09 Ramp Attack:
+R
+Cost 2: Deal 1 damage to your opponent. Gain 1 exp.
+
+1A10 Burst Attack:
+R
+Cost 4: Deal 3 damage to your opponent. Draw 1 card.
+
+1A11 Chaos Attack:
+E
+Cost 2: Discard the top 3 cards of your deck. Deal 1 damage to your opponent for every "Attack" or "Chroma Attack" discarded.
+
+1A12 Multi Blockers:
+E
+Cost 2: This card's cost becomes 0. Summon "Multi Blockers" until your field is full. If you are to take damage, destroy this card instead.
+
+1A13 Ghost Attack:
+E
+Cost 2: Deal 1 damage to your opponent. Discard 1 card. Destroy this card.
+
+1A14 Chain Attack:
+E
+Cost 2: Deal 1 damage to your opponent. Add an "Attack" to your hand.
+
+1A15 Delayed Attack:
+E
+Cost 2: When this card is sent to the drop zone, deal 1 damage.
+
+1A16 Torture:
+L 
+Cost 2: Deal 1 damage to your opponent for every 5 cards in their drop zone.
+
+1A17 Howl of the Beasts:
+L 
+Cost 2: Turn all of your "Beast" into "Great Beast", turn their cost into 0.
+
+1A18 Storm Attack:
+L
+Cost 2: Both players take 1 damage. Gain 1 extra life.
+
+1A19 Almighty Smite:
+L
+Cost 4: While this card is in your hand, reduce the cost of this card by 1 for every action card you control. Destroy all action cards on the field.
+
+1A20 Heavenly Image:
+L
+Cost 1: Gain 2 exp. If your character is Red, discard 2 cards. If your character is Green, take 2 damage. If your character is Blue, remove the trigger of all your life cards. If your character is Yellow, summon "Blocker" until your board is full. If your character is of All-Color,  deal 1 damage, draw 1 card, gain 1 extra life and give it a random trigger.
+
+// Special Booster 1 Characters
+S1C01 Thanatos: R
 1: [CHROMA] Discard the top card of your deck. Add 1 card from your drop zone to your hand.
 2: [CHROMA] Discard the top card of your deck. Add 1 card from your drop zone to your hand. Deal 1 damage to your opponent.
 3: [CHROMA] Discard the top card of your deck. Add 1 card from your drop zone to your hand. Destroy 1 of your opponent's life cards.
+
+// Special Booster 1 Actions
+S1A01 Death's Hand:
+C
+Cost 1: Discard the top card of your deck. Add 1 card from your drop zone to your hand.
+
+S1A02 Healing Ritual:
+C
+Cost 1: Discard 2 cards from your hand. Gain 1 extra life and give it a random trigger.
+
+S1A03 Destruction Ritual:
+R
+Cost 2: Discard 2 cards from your hand. Destroy 2 of your opponent's life cards.
+
+S1A04 Chaos Destroy:
+E
+Cost 1: Discard the top 3 cards of your deck. Destroy 1 of your opponent's life cards.
+
+S1A05 Final Wrath:
+L
+Cost 2: Deal 1 damage to your opponent. If your deck has 10 or less cards, deal 2 more damage to your opponent.

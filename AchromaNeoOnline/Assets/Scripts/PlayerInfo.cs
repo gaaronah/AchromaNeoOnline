@@ -158,7 +158,7 @@ public class PlayerInfo : MonoBehaviour
         // 1 Cost Actions
         aresDeck.AddCard("Attack", Constants.ATTACK_AMT); // 10
         aresDeck.AddCard("Chroma Attack", Constants.CHROMA_AMT); // 14
-        aresDeck.AddCard("Destroy", 4); // 18
+        aresDeck.AddCard("Smite", 4); // 18
         aresDeck.AddCard("Extra Life", 4); // 22
                                            // 2 Cost Actions
         aresDeck.AddCard("Critical Attack", 4); // 26
@@ -252,7 +252,7 @@ public class PlayerInfo : MonoBehaviour
         collection.ownedActions.Add("Steal Attack");
         collection.ownedActions.Add("Insanity");
         collection.ownedActions.Add("Craft Attack");
-        collection.ownedActions.Add("Craft");
+        collection.ownedActions.Add("Quick Draw");
         collection.ownedActions.Add("Agility");
 
         SaveInfo();
