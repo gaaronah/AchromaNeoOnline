@@ -18,6 +18,7 @@ public class CharacterCard : MonoBehaviour
     public Image characterImage;
     public Text characterGrade;
 
+    public string set;
 
     private void Awake()
     {
@@ -76,6 +77,11 @@ public class CharacterCard : MonoBehaviour
     }
 
     public virtual void ActivateSkill()
+    {
+
+    }
+
+    public virtual void CheckPhase()
     {
 
     }

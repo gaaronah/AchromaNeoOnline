@@ -89,7 +89,7 @@ public class ActionPanelScript : MonoBehaviour
                 {
                     break;
                 }
-                placeholders[j].sprite = actionCards[i].sprite;
+                placeholders[j].sprite = actionCards[i].sprites[0];
                 placeholders[j].color = new Color(1, 1, 1, 1);
                 actionNames[j].text = actionCards[i].cardName;
                 if (!PlayerInfo.playerInfo.collection.ownedActions.Contains(actionCards[i].cardName))
@@ -122,7 +122,7 @@ public class ActionPanelScript : MonoBehaviour
                 {
                     break;
                 }
-                placeholders[j].sprite = ownedCards[i].sprite;
+                placeholders[j].sprite = ownedCards[i].sprites[0];
                 placeholders[j].color = new Color(1, 1, 1, 1);
                 actionNames[j].text = ownedCards[i].cardName;
                 currentPageAction[j] = ownedCards[i].gameObject;

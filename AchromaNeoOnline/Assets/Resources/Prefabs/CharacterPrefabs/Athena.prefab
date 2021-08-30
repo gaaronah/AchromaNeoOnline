@@ -341,3 +341,4 @@ MonoBehaviour:
   relatedActions: []
   characterImage: {fileID: 0}
   characterGrade: {fileID: 0}
+  set: Base

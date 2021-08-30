@@ -188,6 +188,7 @@ MonoBehaviour:
   relatedActions: []
   characterImage: {fileID: 7590351346448190614}
   characterGrade: {fileID: 7590351346312742807}
+  set: Base
 --- !u!1 &7590351347417791919
 GameObject:
   m_ObjectHideFlags: 0

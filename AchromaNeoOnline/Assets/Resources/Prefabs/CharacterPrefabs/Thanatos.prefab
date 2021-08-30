@@ -109,6 +109,7 @@ MonoBehaviour:
   relatedActions: []
   characterImage: {fileID: 3855176342089567695}
   characterGrade: {fileID: 3855176342222915278}
+  set: Death
 --- !u!1 &3855176342222915264
 GameObject:
   m_ObjectHideFlags: 0

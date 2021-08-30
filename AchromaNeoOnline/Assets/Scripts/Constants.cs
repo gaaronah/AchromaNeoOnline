@@ -15,7 +15,7 @@ public class Constants
     public static int POINTS_LIMIT = 10;
 
     public static int TOTAL_CHARACTERS = 10;
-    public static int TOTAL_ACTIONS = 40;
+    public static int TOTAL_ACTIONS = 45;
 
     public static int NAME_MAX_LENGTH = 15;
 

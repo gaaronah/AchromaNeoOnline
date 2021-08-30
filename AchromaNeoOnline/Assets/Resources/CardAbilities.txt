@@ -157,9 +157,9 @@ Cost 2: Discard the top 3 cards of your deck. Deal 1 damage to your opponent for
 E
 Cost 2: This card's cost becomes 0. Summon "Multi Blockers" until your field is full. If you are to take damage, destroy this card instead.
 
-1A13 Ghost Attack:
+1A13 Craft:
 E
-Cost 2: Deal 1 damage to your opponent. Discard 1 card. Destroy this card.
+Cost 1: Discard 1 card. Reduce the cost of all your action cards on the field by 1.
 
 1A14 Chain Attack:
 E

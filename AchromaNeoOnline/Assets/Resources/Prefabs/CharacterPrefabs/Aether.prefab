@@ -107,6 +107,7 @@ MonoBehaviour:
   relatedActions: []
   characterImage: {fileID: 4628839190741913130}
   characterGrade: {fileID: 4628839190875260203}
+  set: Story
   aether2Sprites:
   - {fileID: -1905965987265504096, guid: da5904415000e174cb3dc9996e661af0, type: 3}
   - {fileID: -5042761912881079490, guid: bcb0064f942e95a4a965f2f1b7ed0cd2, type: 3}
