@@ -31,6 +31,11 @@ public class ActionCard : MonoBehaviour
         
     }
 
+    public virtual void AddToField()
+    {
+
+    }
+
     public virtual void AddToHand()
     {
 
@@ -62,6 +67,11 @@ public class ActionCard : MonoBehaviour
     }
 
     public virtual void CheckPhase()
+    {
+
+    }
+
+    public virtual void OnAddToDrop()
     {
 
     }

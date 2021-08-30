@@ -153,9 +153,9 @@ Cost 4: Deal 3 damage to your opponent. Draw 1 card.
 E
 Cost 2: Discard the top 3 cards of your deck. Deal 1 damage to your opponent for every "Attack" or "Chroma Attack" discarded.
 
-1A12 Multi Blockers:
+1A12 Multi Shield:
 E
-Cost 2: This card's cost becomes 0. Summon "Multi Blockers" until your field is full. If you are to take damage, destroy this card instead.
+Cost 2: This card's cost becomes 0. Summon "Multi Shield" until your field is full. If you are to take damage, destroy this card instead.
 
 1A13 Craft:
 E
@@ -167,17 +167,17 @@ Cost 2: Deal 1 damage to your opponent. Add an "Attack" to your hand.
 
 1A15 Delayed Attack:
 E
-Cost 2: When this card is sent to the drop zone, deal 1 damage.
+Cost 2: Draw 1 card. When this card is sent to the drop zone, deal 1 damage.
 
 1A16 Torture:
 L 
 Cost 2: Deal 1 damage to your opponent for every 5 cards in their drop zone.
 
-1A17 Howl of the Beasts:
+1A17 Ascend Beasts:
 L 
-Cost 2: Turn all of your "Beast" into "Great Beast", turn their cost into 0.
+Cost 1: Turn all of your "Beast" into "Great Beast", turn their cost into 0.
 
-1A18 Storm Attack:
+1A18 Heavy Storm:
 L
 Cost 2: Both players take 1 damage. Gain 1 extra life.
 
