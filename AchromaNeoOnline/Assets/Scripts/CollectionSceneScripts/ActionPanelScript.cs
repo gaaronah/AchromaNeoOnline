@@ -10,6 +10,7 @@ public class ActionPanelScript : MonoBehaviour
     public Image[] placeholders = new Image[10];
     public GameObject[] shades = new GameObject[10];
     public Text[] actionNames = new Text[10];
+    public Text[] actionCosts = new Text[10];
 
     public bool showUnowned = false;
     public int currentPage = 0;
@@ -73,10 +74,11 @@ public class ActionPanelScript : MonoBehaviour
             placeholders[i].sprite = null;
             placeholders[i].color = new Color(0.6f, 0.6f, 0.6f, 1);
             actionNames[i].text = "";
+            actionCosts[i].text = "";
             shades[i].SetActive(false);
             nextPageButton.SetActive(false);
             prevPageButton.SetActive(false);
-
+            
             currentPageAction[i] = null;
         }
 
@@ -92,6 +94,7 @@ public class ActionPanelScript : MonoBehaviour
                 placeholders[j].sprite = actionCards[i].sprites[0];
                 placeholders[j].color = new Color(1, 1, 1, 1);
                 actionNames[j].text = actionCards[i].cardName;
+                actionCosts[j].text = actionCards[i].cost.ToString();
                 if (!PlayerInfo.playerInfo.collection.ownedActions.Contains(actionCards[i].cardName))
                 {
                     shades[j].SetActive(true);
@@ -103,7 +106,7 @@ public class ActionPanelScript : MonoBehaviour
                 currentPageAction[j] = actionCards[i].gameObject;
                 j++;
             }
-            if (currentPage * 5 + 5 < actionCards.Length)
+            if (currentPage * 10 + 10 < actionCards.Length)
             {
                 nextPageButton.SetActive(true);
             }
@@ -111,12 +114,12 @@ public class ActionPanelScript : MonoBehaviour
             {
                 nextPageButton.SetActive(false);
             }
-            pageNumber.text = (currentPage + 1).ToString() + " / " + Mathf.CeilToInt((float)Constants.TOTAL_ACTIONS / 5f).ToString();
+            pageNumber.text = (currentPage + 1).ToString() + " / " + Mathf.CeilToInt((float)Constants.TOTAL_ACTIONS / 10f).ToString();
         }
         else
         {
             int j = 0;
-            for (int i = currentPage * 5; i < currentPage * 5 + 5; i++)
+            for (int i = currentPage * 10; i < currentPage * 10 + 10; i++)
             {
                 if (i >= ownedCards.Count)
                 {
@@ -125,10 +128,11 @@ public class ActionPanelScript : MonoBehaviour
                 placeholders[j].sprite = ownedCards[i].sprites[0];
                 placeholders[j].color = new Color(1, 1, 1, 1);
                 actionNames[j].text = ownedCards[i].cardName;
+                actionCosts[j].text = ownedCards[i].cost.ToString();
                 currentPageAction[j] = ownedCards[i].gameObject;
                 j++;
             }
-            if (currentPage * 5 + 5 < ownedCards.Count)
+            if (currentPage * 10 + 10 < ownedCards.Count)
             {
                 nextPageButton.SetActive(true);
             }
@@ -136,7 +140,7 @@ public class ActionPanelScript : MonoBehaviour
             {
                 nextPageButton.SetActive(false);
             }
-            pageNumber.text = (currentPage + 1).ToString() + " / " + Mathf.CeilToInt((float)ownedCards.Count / 5f).ToString();
+            pageNumber.text = (currentPage + 1).ToString() + " / " + Mathf.CeilToInt((float)ownedCards.Count / 10f).ToString();
         }
 
 

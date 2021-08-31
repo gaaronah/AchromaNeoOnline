@@ -185,7 +185,7 @@ MonoBehaviour:
   relatedActions: []
   characterImage: {fileID: 7127640999345518348}
   characterGrade: {fileID: 7127640999210073101}
-  set: First Contact
+  set: FCWL
 --- !u!1 &7127641000047926292
 GameObject:
   m_ObjectHideFlags: 0

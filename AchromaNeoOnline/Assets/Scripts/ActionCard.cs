@@ -4,10 +4,11 @@ using UnityEngine.UI;
 public class ActionCard : MonoBehaviour
 {
     public Sprite[] sprites = new Sprite[5]; // N, R, G, B, Y
+    public Sprite[] gradeBorderSprites = new Sprite[5]; // N, R, G, B, Y
     
     public string cardName;
     public string cardSkill;
-    public int grade;
+    public int cost;
     public int rarity;
 
     public int owner;
@@ -20,7 +21,8 @@ public class ActionCard : MonoBehaviour
 
     public ActionCard[] relatedActions;
 
-    public Image characterImage;
+    public Image actionImage;
+    public Image gradeBorderImage;
     public Text actionCost;
     public Text actionTrigger;
 
