@@ -18,6 +18,10 @@ public class PlayerInfo : MonoBehaviour
     public List<DeckInfo> decks;
     public CollectionInfo collection;
 
+
+    public List<CharacterCard> characterCardList;
+    public List<ActionCard> actionCardList;
+
     void Awake()
     {
         if (playerInfo == null)
@@ -28,6 +32,7 @@ public class PlayerInfo : MonoBehaviour
 
             decks = new List<DeckInfo>();
             collection = new CollectionInfo();
+            LoadCardLists();
             LoadInfo();
         }
         else
@@ -288,5 +293,96 @@ public class PlayerInfo : MonoBehaviour
     {
         collection.ownedCharacters.Add(card.cardName);
         SaveInfo();
+    }
+
+    public void LoadCardLists()
+    {
+        characterCardList = new List<CharacterCard>();
+        actionCardList = new List<ActionCard>();
+
+        // Loading all characters:
+        LoadCharacterCard("Aether");
+        LoadCharacterCard("Ares");
+        LoadCharacterCard("Demeter");
+        LoadCharacterCard("Dionysus");
+        LoadCharacterCard("Athena");
+        LoadCharacterCard("Hades");
+        LoadCharacterCard("Artemis");
+        LoadCharacterCard("Poseidon");
+        LoadCharacterCard("Zeus");
+        LoadCharacterCard("Thanatos");
+
+        // Loading all actions:
+        LoadActionCardBase("Attack"); // 1
+        LoadActionCardBase("Chroma Attack"); // 2
+        LoadActionCardBase("Extra Life"); // 3
+        LoadActionCardBase("Smite"); // 4
+        LoadActionCardBase("Ramp"); // 5
+        LoadActionCardBase("Peek"); // 6
+        LoadActionCardBase("Bless"); // 7
+        LoadActionCardBase("Quick Draw"); // 8
+        LoadActionCardBase("Critical Attack"); // 9
+        LoadActionCardBase("Shield Attack"); // 10
+        LoadActionCardBase("Smite Attack"); // 11
+        LoadActionCardBase("Quick Attack"); // 12
+        LoadActionCardBase("Beast"); // 13
+        LoadActionCardBase("Steal Attack"); // 14
+        LoadActionCardBase("Craft Attack"); // 15 
+        LoadActionCardBase("Battlecry"); // 16
+        LoadActionCardBase("Great Beast"); // 17
+        LoadActionCardBase("Harvest"); // 18
+        LoadActionCardBase("Insanity"); // 19 
+        LoadActionCardBase("Agility"); // 20
+
+        LoadActionCardSet1("Drag Down"); // 21 
+        LoadActionCardSet1("Attack Order"); // 22 
+        LoadActionCardSet1("Storm"); // 23
+        LoadActionCardSet1("Trading Smite"); // 24
+        LoadActionCardSet1("Trade Attack"); // 25
+        LoadActionCardSet1("Preparation"); // 26
+        LoadActionCardSet1("Greater Extra Life"); // 27
+        LoadActionCardSet1("Destroy"); // 28
+        LoadActionCardSet1("Ramp Attack"); // 29
+        LoadActionCardSet1("Burst Attack"); // 30
+        LoadActionCardSet1("Chaos Attack"); // 31 
+        LoadActionCardSet1("Multi Shield"); // 32
+        LoadActionCardSet1("Craft"); // 33
+        LoadActionCardSet1("Chain Attack"); // 34
+        LoadActionCardSet1("Delayed Attack"); // 35
+        LoadActionCardSet1("Torture"); // 36
+        LoadActionCardSet1("Ascend Beasts"); // 37
+        LoadActionCardSet1("Heavy Storm"); // 38
+        LoadActionCardSet1("Almighty Smite"); // 39
+        LoadActionCardSet1("Heavenly Image"); // 40 
+
+        LoadActionCardSpecialSet1("Death's Hand"); // 41
+        LoadActionCardSpecialSet1("Healing Ritual"); // 42
+        LoadActionCardSpecialSet1("Destruction Ritual"); // 43
+        LoadActionCardSpecialSet1("Chaos Destroy"); // 44
+        LoadActionCardSpecialSet1("Final Wrath"); // 45
+    }
+
+    public void LoadActionCardBase(string s)
+    {
+        GameObject e = Resources.Load("Prefabs/ActionPrefabs/BaseSet/" + s) as GameObject;
+        actionCardList.Add(e.GetComponent<ActionCard>());
+    }
+
+    public void LoadActionCardSet1(string s)
+    {
+        GameObject e = Resources.Load("Prefabs/ActionPrefabs/FirstContactWithLegends/" + s) as GameObject;
+        actionCardList.Add(e.GetComponent<ActionCard>());
+    }
+
+    public void LoadActionCardSpecialSet1(string s)
+    {
+        GameObject e = Resources.Load("Prefabs/ActionPrefabs/SpecialSetThanatos/" + s) as GameObject;
+        actionCardList.Add(e.GetComponent<ActionCard>());
+    }
+
+    public void LoadCharacterCard(string s)
+    {
+        GameObject e = Resources.Load("Prefabs/CharacterPrefabs/" + s) as GameObject;
+        characterCardList.Add(e.GetComponent<CharacterCard>());
     }
 }

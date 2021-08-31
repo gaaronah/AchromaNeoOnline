@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ActionPanelScript : MonoBehaviour
 {
-    public ActionCard[] actionCards = new ActionCard[Constants.TOTAL_ACTIONS];
+    public ActionCard[] actionCards;
 
     public Image[] placeholders = new Image[10];
     public GameObject[] shades = new GameObject[10];
@@ -28,8 +28,18 @@ public class ActionPanelScript : MonoBehaviour
 
     private void Awake()
     {
+        LoadAllActionCards();
         LoadOwnedCards();
         LoadPage();
+    }
+
+    public void LoadAllActionCards()
+    {
+        actionCards = new ActionCard[Constants.TOTAL_ACTIONS];
+        for (int i = 0; i < Constants.TOTAL_ACTIONS; i++)
+        {
+            actionCards[i] = PlayerInfo.playerInfo.actionCardList[i];
+        }
     }
 
     public void LoadOwnedCards()
@@ -74,6 +84,7 @@ public class ActionPanelScript : MonoBehaviour
         {
             placeholders[i].sprite = null;
             placeholders[i].color = new Color(0.6f, 0.6f, 0.6f, 1);
+            placeholders[i].GetComponent<Button>().interactable = false;
             actionNames[i].text = "";
             actionCosts[i].text = "";
             shades[i].SetActive(false);
@@ -95,6 +106,7 @@ public class ActionPanelScript : MonoBehaviour
                 }
                 placeholders[j].sprite = actionCards[i].sprites[0];
                 placeholders[j].color = new Color(1, 1, 1, 1);
+                placeholders[j].GetComponent<Button>().interactable = true;
                 costBorders[j].SetActive(true);
                 actionNames[j].text = actionCards[i].cardName;
                 actionCosts[j].text = actionCards[i].cost.ToString();
@@ -130,6 +142,7 @@ public class ActionPanelScript : MonoBehaviour
                 }
                 placeholders[j].sprite = ownedCards[i].sprites[0];
                 placeholders[j].color = new Color(1, 1, 1, 1);
+                placeholders[j].GetComponent<Button>().interactable = true;
                 costBorders[j].SetActive(true);
                 actionNames[j].text = ownedCards[i].cardName;
                 actionCosts[j].text = ownedCards[i].cost.ToString();

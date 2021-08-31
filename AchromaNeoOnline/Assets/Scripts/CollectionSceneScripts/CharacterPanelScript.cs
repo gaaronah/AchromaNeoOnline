@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CharacterPanelScript : MonoBehaviour
 {
-    public CharacterCard[] characterCards = new CharacterCard[Constants.TOTAL_CHARACTERS];
+    public CharacterCard[] characterCards;
 
     public Image[] placeholders = new Image[5];
     public GameObject[] shades = new GameObject[5];
@@ -27,8 +27,18 @@ public class CharacterPanelScript : MonoBehaviour
 
     private void Awake()
     {
+        LoadAllCharacterCards();
         LoadOwnedCards();
         LoadPage();
+    }
+
+    public void LoadAllCharacterCards()
+    {
+        characterCards = new CharacterCard[Constants.TOTAL_CHARACTERS];
+        for (int i = 0; i < Constants.TOTAL_CHARACTERS; i++)
+        {
+            characterCards[i] = PlayerInfo.playerInfo.characterCardList[i];
+        }
     }
 
     public void LoadOwnedCards()
@@ -73,6 +83,7 @@ public class CharacterPanelScript : MonoBehaviour
         {
             placeholders[i].sprite = null;
             placeholders[i].color = new Color(0.6f, 0.6f, 0.6f, 1);
+            placeholders[i].GetComponent<Button>().interactable = false;
             characterNames[i].text = "";
             shades[i].SetActive(false);
             nextPageButton.SetActive(false);
@@ -92,6 +103,7 @@ public class CharacterPanelScript : MonoBehaviour
                 }
                 placeholders[j].sprite = characterCards[i].sprites[0];
                 placeholders[j].color = new Color(1, 1, 1, 1);
+                placeholders[j].GetComponent<Button>().interactable = true;
                 characterNames[j].text = characterCards[i].characterName;
                 if (!PlayerInfo.playerInfo.collection.ownedCharacters.Contains(characterCards[i].characterName))
                 {
@@ -124,6 +136,7 @@ public class CharacterPanelScript : MonoBehaviour
                 }
                 placeholders[j].sprite = ownedCards[i].sprites[0];
                 placeholders[j].color = new Color(1, 1, 1, 1);
+                placeholders[j].GetComponent<Button>().interactable = true;
                 characterNames[j].text = ownedCards[i].characterName;
                 currentPageCharacter[j] = ownedCards[i].gameObject;
                 j++;
