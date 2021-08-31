@@ -236,7 +236,7 @@ public class PlayerInfo : MonoBehaviour
         // Starting collection of action cards
         collection.ownedActions.Add("Attack");
         collection.ownedActions.Add("Chroma Attack");
-        collection.ownedActions.Add("Destroy");
+        collection.ownedActions.Add("Smite");
         collection.ownedActions.Add("Extra Life");
         collection.ownedActions.Add("Critical Attack");
         collection.ownedActions.Add("Smite Attack");

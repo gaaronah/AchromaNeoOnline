@@ -59,7 +59,7 @@ BA11 Smite Attack:
 Cost 2: Destroy an action card on the field. Deal 1 damage to your opponent.
 
 BA12 Quick Attack:
-Cost 2: Deal 1 damage to your opponent. Draw 2 cards.
+Cost 2: Deal 1 damage to your opponent. Draw 1 card.
 
 BA13 Beast:
 Continuous
@@ -127,7 +127,7 @@ Cost 1: Destroy 1 of your action cards on the field. Draw 1 card.
 
 1A05 Trade Attack:
 C
-Cost 2: Deal 1 damage to your opponent. Discard 1 card. Draw 1 card.
+Cost 2: Deal 1 damage to your opponent. Discard 1 card. Draw 2 cards.
 
 1A06 Preparation:
 R
@@ -215,3 +215,6 @@ Cost 1: Discard the top 3 cards of your deck. Destroy 1 of your opponent's life 
 S1A05 Final Wrath:
 L
 Cost 2: Deal 1 damage to your opponent. If your deck has 10 or less cards, deal 2 more damage to your opponent.
+
+
+

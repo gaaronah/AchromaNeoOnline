@@ -9,6 +9,7 @@ public class ActionPanelScript : MonoBehaviour
 
     public Image[] placeholders = new Image[10];
     public GameObject[] shades = new GameObject[10];
+    public GameObject[] costBorders = new GameObject[10];
     public Text[] actionNames = new Text[10];
     public Text[] actionCosts = new Text[10];
 
@@ -76,6 +77,7 @@ public class ActionPanelScript : MonoBehaviour
             actionNames[i].text = "";
             actionCosts[i].text = "";
             shades[i].SetActive(false);
+            costBorders[i].SetActive(false);
             nextPageButton.SetActive(false);
             prevPageButton.SetActive(false);
             
@@ -93,6 +95,7 @@ public class ActionPanelScript : MonoBehaviour
                 }
                 placeholders[j].sprite = actionCards[i].sprites[0];
                 placeholders[j].color = new Color(1, 1, 1, 1);
+                costBorders[j].SetActive(true);
                 actionNames[j].text = actionCards[i].cardName;
                 actionCosts[j].text = actionCards[i].cost.ToString();
                 if (!PlayerInfo.playerInfo.collection.ownedActions.Contains(actionCards[i].cardName))
@@ -127,6 +130,7 @@ public class ActionPanelScript : MonoBehaviour
                 }
                 placeholders[j].sprite = ownedCards[i].sprites[0];
                 placeholders[j].color = new Color(1, 1, 1, 1);
+                costBorders[j].SetActive(true);
                 actionNames[j].text = ownedCards[i].cardName;
                 actionCosts[j].text = ownedCards[i].cost.ToString();
                 currentPageAction[j] = ownedCards[i].gameObject;

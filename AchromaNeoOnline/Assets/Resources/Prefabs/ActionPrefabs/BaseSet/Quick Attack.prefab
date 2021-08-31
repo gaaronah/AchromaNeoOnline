@@ -259,7 +259,7 @@ MonoBehaviour:
   - {fileID: 8902268144535037645, guid: c6b909d1fd52e2049870bed5d6143ac7, type: 3}
   - {fileID: -7451927189256044472, guid: c6b909d1fd52e2049870bed5d6143ac7, type: 3}
   cardName: Quick Attack
-  cardSkill: Deal 1 damage to your opponent. Draw 2 cards.
+  cardSkill: Deal 1 damage to your opponent. Draw 1 card.
   cost: 2
   rarity: 0
   owner: 0

@@ -13,6 +13,7 @@ public class CardInfoPanelScript : MonoBehaviour
     public Text description;
     public Text cardName;
     public Text cardGrade;
+    public Text cardSet;
 
     public GameObject nextPageButton;
     public GameObject prevPageButton;
@@ -38,6 +39,7 @@ public class CardInfoPanelScript : MonoBehaviour
             placeHolder.sprite = characterCard.sprites[currentPage];
             cardName.text = characterCard.characterName.ToUpper();
             cardGrade.text = 1.ToString();
+            cardSet.text = "- " + characterCard.set + " -";
 
             gradeBorder.sprite = gradeBorderSprites[1];
             switch (characterCard.color)
@@ -67,6 +69,7 @@ public class CardInfoPanelScript : MonoBehaviour
             placeHolder.sprite = actionCard.sprites[0];
             cardName.text = actionCard.cardName.ToUpper();
             cardGrade.text = actionCard.cost.ToString();
+            cardSet.text = "- " + actionCard.set + " -";
 
             gradeBorder.sprite = gradeBorderSprites[0];
 
@@ -98,6 +101,7 @@ public class CardInfoPanelScript : MonoBehaviour
                     placeHolder.sprite = characterCard.sprites[currentPage];
                     cardName.text = characterCard.characterName.ToUpper();
                     cardGrade.text = (currentPage + 1).ToString();
+                    cardSet.text = "- " + characterCard.set + " -";
                 } 
                 else
                 {
@@ -106,6 +110,7 @@ public class CardInfoPanelScript : MonoBehaviour
                     placeHolder.sprite = characterCard.relatedActions[currentPage - 2].sprites[0];
                     cardName.text = characterCard.relatedActions[currentPage - 2].cardName.ToUpper();
                     cardGrade.text = characterCard.relatedActions[currentPage - 2].cost.ToString();
+                    cardSet.text = "- " + characterCard.relatedActions[currentPage - 2].set + " -";
                 }
                 prevPageButton.SetActive(true);
                 nextPageButton.SetActive(false);
@@ -121,9 +126,11 @@ public class CardInfoPanelScript : MonoBehaviour
                 placeHolder.sprite = actionCard.relatedActions[currentPage - 1].sprites[0];
                 cardName.text = actionCard.relatedActions[currentPage - 1].cardName.ToUpper();
                 cardGrade.text = actionCard.relatedActions[currentPage - 1].cost.ToString();
+                cardSet.text = "- " + actionCard.relatedActions[currentPage - 1].set + " -";
 
+                prevPageButton.SetActive(true);
                 nextPageButton.SetActive(false);
-                if (currentPage - 1 < actionCard.relatedActions.Length)
+                if (currentPage < actionCard.relatedActions.Length)
                 {
                     nextPageButton.SetActive(true);
                 }
@@ -140,6 +147,7 @@ public class CardInfoPanelScript : MonoBehaviour
                     placeHolder.sprite = characterCard.sprites[currentPage];
                     cardName.text = characterCard.characterName.ToUpper();
                     cardGrade.text = (currentPage + 1).ToString();
+                    cardSet.text = "- " + characterCard.set + " -";
 
                     if (currentPage == 0)
                     {
@@ -153,6 +161,7 @@ public class CardInfoPanelScript : MonoBehaviour
                     placeHolder.sprite = characterCard.relatedActions[currentPage - 2].sprites[0];
                     cardName.text = characterCard.relatedActions[currentPage - 2].cardName.ToUpper();
                     cardGrade.text = characterCard.relatedActions[currentPage - 2].cost.ToString();
+                    cardSet.text = "- " + characterCard.relatedActions[currentPage - 2].set + " -";
                 }
             } 
             else if (actionCard != null)
@@ -164,6 +173,7 @@ public class CardInfoPanelScript : MonoBehaviour
                     placeHolder.sprite = actionCard.relatedActions[currentPage - 1].sprites[0];
                     cardName.text = actionCard.relatedActions[currentPage - 1].cardName.ToUpper();
                     cardGrade.text = actionCard.relatedActions[currentPage - 1].cost.ToString();
+                    cardSet.text = "- " + actionCard.relatedActions[currentPage - 1].set + " -";
                 } 
                 else
                 {
@@ -171,6 +181,7 @@ public class CardInfoPanelScript : MonoBehaviour
                     placeHolder.sprite = actionCard.sprites[0];
                     cardName.text = actionCard.cardName.ToUpper();
                     cardGrade.text = actionCard.cost.ToString();
+                    cardSet.text = "- " + actionCard.set + " -";
 
                     prevPageButton.SetActive(false);
                 }
