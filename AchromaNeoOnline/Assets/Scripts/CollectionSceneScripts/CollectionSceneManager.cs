@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CollectionSceneManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class CollectionSceneManager : MonoBehaviour
     public GameObject characterPanel;
     public GameObject actionPanel;
     public GameObject deckPanel;
+
+    public Text title;
 
     public float loadTime;
 
@@ -29,6 +32,7 @@ public class CollectionSceneManager : MonoBehaviour
         actionPanel.SetActive(false);
         deckPanel.SetActive(false);
         characterPanel.SetActive(true);
+        title.text = "Collection: Character Cards";
     }
 
     public void OpenActionPanel()
@@ -36,6 +40,7 @@ public class CollectionSceneManager : MonoBehaviour
         deckPanel.SetActive(false);
         characterPanel.SetActive(false);
         actionPanel.SetActive(true);
+        title.text = "Collection: Action Cards";
     }
 
     public void OpenDeckPanel()
@@ -43,5 +48,6 @@ public class CollectionSceneManager : MonoBehaviour
         actionPanel.SetActive(false);
         characterPanel.SetActive(false);
         deckPanel.SetActive(true);
+        title.text = "Collection: Decks";
     }
 }

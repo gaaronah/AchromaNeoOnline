@@ -8,10 +8,27 @@ public class DeckInfo
 
     public void AddCard(string cardName, int cardAmount)
     {
-        if (!actionCards.ContainsKey(cardName) || 
-            actionCards[cardName] + cardAmount <= Constants.CARD_LIMIT)
+        if(cardName.Equals("Attack"))
+        {
+            if (!actionCards.ContainsKey(cardName))
+            {
+                actionCards.Add(cardName, 10);
+            }
+        }
+        else if (cardName.Equals("Chroma Attack"))
+        {
+            if (!actionCards.ContainsKey(cardName))
+            {
+                actionCards.Add(cardName, 4);
+            }
+        }
+        else if (!actionCards.ContainsKey(cardName))
         {
             actionCards.Add(cardName, cardAmount);
+        }
+        else if (actionCards[cardName] + cardAmount <= Constants.CARD_LIMIT)
+        {
+            actionCards[cardName] += cardAmount;
         }
     }
 }
