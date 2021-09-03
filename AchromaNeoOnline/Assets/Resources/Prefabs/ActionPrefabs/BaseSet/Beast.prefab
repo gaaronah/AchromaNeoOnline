@@ -184,7 +184,8 @@ MonoBehaviour:
   - {fileID: -7451927189256044472, guid: c6b909d1fd52e2049870bed5d6143ac7, type: 3}
   cardName: Beast
   cardSkill: At the start of your turn, deal 1 damage, and this card's cost becomes
-    0. Your opponent may attack this card to destroy it.
+    0. Your opponent may attack this card to destroy it. Stackable (when you place
+    another "Beast" on your field, you may put it on top of this card).
   cost: 2
   rarity: 0
   owner: 0

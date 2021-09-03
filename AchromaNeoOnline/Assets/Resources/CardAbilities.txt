@@ -63,7 +63,7 @@ Cost 2: Deal 1 damage to your opponent. Draw 1 card.
 
 BA13 Beast:
 Continuous
-Cost 2: At the start of your turn, deal 1 damage, and this card's cost becomes 0. Your opponent may attack this card to destroy it.
+Cost 2: At the start of your turn, deal 1 damage, and this card's cost becomes 0. Your opponent may attack this card to destroy it. Stackable.
 
 BA14 Steal Attack:
 Cost 2: Look at 1 of your closed life cards, look at 1 of your opponent's closed life cards, you may trade them. Deal 1 damage to your opponent.
@@ -76,7 +76,7 @@ Cost 4: This card's cost becomes 0. Draw 2 cards. When you are about to deal dam
 
 BA17 Great Beast:
 Continuous
-Cost 4: This card's cost becomes 0. At the start of your turn, deal 1 damage to your opponent and gain an extra life. Your opponent may attack this card to destroy it.
+Cost 4: This card's cost becomes 0. At the start of your turn and at the end of your turn, deal 1 damage to your opponent. Your opponent may attack this card to destroy it. Stackable.
 
 BA18 Harvest:
 Cost 4: Gain 2 extra life. If you are to take damage, destroy this card instead.

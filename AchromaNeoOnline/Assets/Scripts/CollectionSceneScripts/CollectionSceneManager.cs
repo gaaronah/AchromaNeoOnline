@@ -23,7 +23,7 @@ public class CollectionSceneManager : MonoBehaviour
 
     private void LoadInPanel()
     {
-        OpenCharacterPanel();
+        OpenDeckPanel();
         loadPanel.SetActive(false);
     }
 

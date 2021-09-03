@@ -220,7 +220,7 @@ public class PlayerInfo : MonoBehaviour
         // 1 Cost Actions
         athenaDeck.AddCard("Attack", Constants.ATTACK_AMT); // 10
         athenaDeck.AddCard("Chroma Attack", Constants.CHROMA_AMT); // 14
-        athenaDeck.AddCard("Craft", 4); // 18
+        athenaDeck.AddCard("Quick Draw", 4); // 18
         athenaDeck.AddCard("Extra Life", 4); // 22
                                              // 2 Cost Actions
         athenaDeck.AddCard("Critical Attack", 4); // 26

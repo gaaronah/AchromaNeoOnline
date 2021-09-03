@@ -104,9 +104,10 @@ MonoBehaviour:
   - {fileID: 8902268144535037645, guid: c6b909d1fd52e2049870bed5d6143ac7, type: 3}
   - {fileID: -7451927189256044472, guid: c6b909d1fd52e2049870bed5d6143ac7, type: 3}
   cardName: Great Beast
-  cardSkill: This card's cost becomes 0. At the start of your turn, deal 1 damage
-    to your opponent and gain an extra life. Your opponent may attack this card to
-    destroy it.
+  cardSkill: This card's cost becomes 0. At the start of your turn and at the end
+    of your turn, deal 1 damage to your opponent. Your opponent may attack this card
+    to destroy it. Stackable (when you place another "Great Beast" on your field,
+    you may put it on top of this card).
   cost: 4
   rarity: 0
   owner: 0
