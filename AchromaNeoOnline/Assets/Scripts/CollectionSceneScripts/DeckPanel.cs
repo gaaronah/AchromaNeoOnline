@@ -14,7 +14,9 @@ public class DeckPanel : MonoBehaviour
 
     public GameObject newDeckButton;
 
-    public GameObject deckDetailsPanel;
+    public DeckInfoPanelScript deckDetailsPanel;
+
+    public CardInfoPanelScript cardInfoPanelScript;
 
     private List<CharacterCard> characters;
     private List<ActionCard> actions;
@@ -22,6 +24,7 @@ public class DeckPanel : MonoBehaviour
 
     private void Awake()
     {
+        deckDetailsPanel.gameObject.SetActive(false);
         LoadDecks();
         LoadPage();
     }
@@ -79,5 +82,17 @@ public class DeckPanel : MonoBehaviour
             newDeckButton.SetActive(true);
             newDeckButton.transform.localPosition = placehodlers[i].transform.localPosition;
         }
+    }
+
+    public void OpenDeckInfo(int i)
+    {
+        deckDetailsPanel.LoadDeck(decks[i]);
+        deckDetailsPanel.gameObject.SetActive(true);
+    }
+
+    public void CloseDeckInfo()
+    {
+        deckDetailsPanel.gameObject.SetActive(false);
+        cardInfoPanelScript.gameObject.SetActive(false);
     }
 }
