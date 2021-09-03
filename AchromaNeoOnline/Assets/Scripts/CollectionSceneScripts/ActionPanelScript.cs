@@ -133,6 +133,12 @@ public class ActionPanelScript : MonoBehaviour
         }
         else
         {
+            int maxPage = Mathf.CeilToInt(ownedCards.Count / 10f) - 1;
+            if (currentPage > maxPage)
+            {
+                currentPage = maxPage;
+            }
+
             int j = 0;
             for (int i = currentPage * 10; i < currentPage * 10 + 10; i++)
             {
