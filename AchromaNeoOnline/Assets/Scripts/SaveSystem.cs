@@ -41,7 +41,7 @@ public class SaveSystem
             return data;
         } 
         else {
-            Debug.LogError("File does not exist");
+            Debug.Log("File does not exist");
             return null;
         }
     }

@@ -265,12 +265,21 @@ public class PlayerInfo : MonoBehaviour
         ListDecks();
     }
 
-    public void GetSet(string set)
+    public void ObtainSet(string set)
     {
-        switch(set.ToLower())
+        foreach (CharacterCard character in characterCardList)
         {
-            case ("all"):
-                break;
+            if (!collection.ownedCharacters.Contains(character.characterName) && (character.set.Equals(set) || set.Equals("all")))
+            {
+                AddCharacter(character);
+            }
+        }
+        foreach (ActionCard action in actionCardList)
+        {
+            if (!collection.ownedActions.Contains(action.cardName) && (action.set.Equals(set) || set.Equals("all")))
+            {
+                AddAction(action);
+            }
         }
     }
 
@@ -285,7 +294,14 @@ public class PlayerInfo : MonoBehaviour
 
     public void AddCharacter(CharacterCard card)
     {
-        collection.ownedCharacters.Add(card.characterName);
+        if (!collection.ownedCharacters.Contains(card.characterName))
+        {
+            collection.ownedCharacters.Add(card.characterName);
+        } 
+        else
+        {
+            essence += 400;
+        }
         SaveInfo();
     }
 
@@ -300,7 +316,28 @@ public class PlayerInfo : MonoBehaviour
 
     public void AddAction(ActionCard card)
     {
-        collection.ownedCharacters.Add(card.cardName);
+        if (!collection.ownedActions.Contains(card.cardName))
+        {
+            collection.ownedActions.Add(card.cardName);
+        }
+        else
+        {
+            switch(card.rarity)
+            {
+                case (1):
+                    essence += 5;
+                    break;
+                case (2):
+                    essence += 20;
+                    break;
+                case (3):
+                    essence += 50;
+                    break;
+                case (4):
+                    essence += 100;
+                    break;
+            }
+        }
         SaveInfo();
     }
 

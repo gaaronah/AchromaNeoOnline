@@ -127,7 +127,7 @@ public class CharacterPanelScript : MonoBehaviour
         } 
         else
         {
-            int maxPage = Mathf.CeilToInt(ownedCards.Count / 10f) - 1;
+            int maxPage = Mathf.CeilToInt(ownedCards.Count / 5f) - 1;
             if (currentPage > maxPage)
             {
                 currentPage = maxPage;

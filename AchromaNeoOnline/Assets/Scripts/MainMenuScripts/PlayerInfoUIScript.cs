@@ -59,7 +59,7 @@ public class PlayerInfoUIScript : MonoBehaviour
 
         if (newName.Length > Constants.NAME_MAX_LENGTH || newName == null || newName == "")
         {
-            Debug.LogError("Input name invalid! Input name cannot be empty & must be less than " + Constants.NAME_MAX_LENGTH + " characters.");
+            Debug.Log("Input name invalid! Input name cannot be empty & must be less than " + Constants.NAME_MAX_LENGTH + " characters.");
             return;
         }
         PlayerInfo.playerInfo.UpdateName(newName);
@@ -76,12 +76,21 @@ public class PlayerInfoUIScript : MonoBehaviour
     {
         PlayerInfo.playerInfo.ResetData();
         Debug.Log("reset data");
-        //LoadDataToUI();
-        SceneManager.LoadScene(1);
+        ReloadScene();
     }
 
     public void OpenCodePanel()
     {
         codePanel.SetActive(true);
+    }
+
+    public void CloseCodePanel()
+    {
+        codePanel.SetActive(false);
+    }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(1);
     }
 }
