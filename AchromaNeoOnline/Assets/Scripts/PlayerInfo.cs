@@ -265,6 +265,15 @@ public class PlayerInfo : MonoBehaviour
         ListDecks();
     }
 
+    public void GetSet(string set)
+    {
+        switch(set.ToLower())
+        {
+            case ("all"):
+                break;
+        }
+    }
+
     public void ListDecks()
     {
         Debug.Log("List Decks:");

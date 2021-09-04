@@ -23,6 +23,8 @@ public class PlayerInfoUIScript : MonoBehaviour
 
     public float timeToLoad;
 
+    public GameObject codePanel;
+
     void Awake()
     {
         loadPanel.SetActive(true);
@@ -76,5 +78,10 @@ public class PlayerInfoUIScript : MonoBehaviour
         Debug.Log("reset data");
         //LoadDataToUI();
         SceneManager.LoadScene(1);
+    }
+
+    public void OpenCodePanel()
+    {
+        codePanel.SetActive(true);
     }
 }
